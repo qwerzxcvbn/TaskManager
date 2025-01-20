@@ -1,0 +1,33 @@
+﻿<Window x:Class="TaskManager.WindowTasksAdmin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TaskManager"
+        mc:Ignorable="d"
+        Title="WindowTasksAdmin" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <StackPanel Background="#FFE8EDFF">
+            <TextBlock Text="Админ" FontSize="20" HorizontalAlignment="Left" Margin="10 10 0 0" FontFamily="Century Gothic"></TextBlock>
+            <TextBlock Text="Задачи" FontSize="33" HorizontalAlignment="Center" Margin="0 -20 0 10" FontFamily="Century Gothic"></TextBlock>
+            <StackPanel Height="25">
+                <Button Height="25" Width="160" HorizontalAlignment="Left" Background="#FFF1F1F1" Content="Добавить задачу" Name="AddTask" FontSize="15" FontFamily="Century Gothic" Click="AddTask_Click"></Button>
+                <Button Height="25" Width="160" Margin="160 -25 0 0" HorizontalAlignment="Left" Background="#FFF1F1F1" Content="Проекты" Name="ProjectButton" FontSize="15" FontFamily="Century Gothic" Click="ProjectButton_Click" ></Button>
+                <Button Height="25" Width="160" Margin="320 -25 0 0" HorizontalAlignment="Left" Background="#FFF1F1F1" Content="Команды" Name="TeamButton" FontSize="15" FontFamily="Century Gothic" Click="TeamButton_Click"></Button>
+                <Button Height="25" Width="160" Margin="480 -25 0 0" HorizontalAlignment="Left" Background="#FFF1F1F1" Content="Список пользователей" Name="ListUser" FontSize="13" FontFamily="Century Gothic" Click="ListUser_Click"></Button>
+                <Button Height="25" Width="160" Margin="640 -25 0 0" HorizontalAlignment="Left" Background="#FFF1F1F1" Content="Удалить задачу" FontSize="15" FontFamily="Century Gothic" Name="DeleteTask" Click="DeleteTask_Click"></Button>
+            </StackPanel>
+            <DataGrid IsReadOnly="True" AutoGenerateColumns="False" x:Name="DataGridTasks">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Width="100" MaxWidth="100" MinWidth="100" Header="Название" Binding="{Binding Path=NameTask}"></DataGridTextColumn>
+                    <DataGridTextColumn Width="133" MaxWidth="133" MinWidth="133" Header="Описание" Binding="{Binding Path=Description}"></DataGridTextColumn>
+                    <DataGridTextColumn Width="65" MaxWidth="65" MinWidth="65" Header="Дата" Binding="{Binding Path=Data}"></DataGridTextColumn>
+                    <DataGridTextColumn Width="80" MaxWidth="80" MinWidth="80" Header="Статус" Binding="{Binding Path=Status.NameStatus}"></DataGridTextColumn>
+                    <DataGridTextColumn Width="80" MaxWidth="80" MinWidth="80" Header="Проект" Binding="{Binding Path=Project.NameProject}"></DataGridTextColumn>
+                    <DataGridTextColumn Width="165" MaxWidth="165" MinWidth="165" Header="Исполнитель" Binding="{Binding Path=Users.FullName}"></DataGridTextColumn>
+                    <DataGridTextColumn Width="150" MaxWidth="150" MinWidth="150" Header="Команда" Binding="{Binding Path=Teams.NameTeam}"></DataGridTextColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+        </StackPanel>
+    </Grid>
+</Window>

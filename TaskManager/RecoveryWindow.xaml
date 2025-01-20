@@ -1,0 +1,18 @@
+﻿<Window x:Class="TaskManager.RecoveryWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TaskManager"
+        mc:Ignorable="d"
+        Title="RecoveryWindow" Height="300" Width="600" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <StackPanel Background="#FFE8EDFF">
+            <TextBlock Text="Восcтановление пароля" FontSize="27" HorizontalAlignment="Center" Margin="0 10 0 20" FontFamily="Century Gothic"></TextBlock>
+            <TextBlock Text="Почта" HorizontalAlignment="Left" Margin="10 0 0 0" FontFamily="Century Gothic" FontSize="15"></TextBlock>
+            <TextBox Margin="10 0 10 30" FontFamily="Century Gothic" Height="20" FontSize="15" Name="EmailTextBox"></TextBox>
+            <Button Content="Восcтановить" Margin="10 0 10 30" FontSize="15" Height="25" FontFamily="Century Gothic" Background="#FFF1F1F1" Name="RecoveryPass_Button" Click="RecoveryPass_Button_Click" ></Button>
+            <Button Content="Назад" Margin="10 0 10 10" HorizontalAlignment="Left" Height="25" Width="100" FontFamily="Century Gothic" Background="#FFF1F1F1" Name="Back_Button" Click="Back_Button_Click" ></Button>
+        </StackPanel> 
+    </Grid>
+</Window>

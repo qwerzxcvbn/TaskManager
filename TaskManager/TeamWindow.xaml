@@ -1,0 +1,25 @@
+﻿<Window x:Class="TaskManager.TeamWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TaskManager"
+        mc:Ignorable="d"
+        Title="TeamWindow" Height="450" Width="600" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <StackPanel Background="#FFE8EDFF">
+            <TextBlock Text="Команды" FontSize="33" HorizontalAlignment="Center" Margin="0 10 0 10" FontFamily="Century Gothic"></TextBlock>
+            <Button Width="100" Content="Назад" Height="25" Background="#FFF1F1F1" FontSize="15" FontFamily="Century Gothic" Name="Back" Margin="0 -40 0 20" HorizontalAlignment="Left" Click="Back_Click" ></Button>
+            <StackPanel>
+                <Button Height="25" Width="300" HorizontalAlignment="Left" Background="#FFF1F1F1" Content="Добавить команду" Name="AddTeam" FontSize="15" FontFamily="Century Gothic" Click="AddTeam_Click" ></Button>
+                <Button Height="25" Width="299" Margin="301 -25 0 0" HorizontalAlignment="Left" Background="#FFF1F1F1" Content="Удалить команду" Name="DeleteTeam" FontSize="15" FontFamily="Century Gothic" Click="DeleteTeam_Click" ></Button>
+            </StackPanel>
+            <DataGrid IsReadOnly="True" AutoGenerateColumns="False" x:Name="DataGridTeam">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Width="420" MaxWidth="420" MinWidth="420" Header="Название" Binding="{Binding Path=NameTeam}"></DataGridTextColumn>
+                    <DataGridTextColumn Width="150" MaxWidth="150" MinWidth="150" Header="Участники" Binding="{Binding Path=Users.FullName}"></DataGridTextColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+        </StackPanel>
+    </Grid>
+</Window>

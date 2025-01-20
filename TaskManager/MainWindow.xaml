@@ -1,0 +1,24 @@
+﻿<Window x:Class="TaskManager.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TaskManager"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="330" Width="600" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <StackPanel Background="#FFE8EDFF">
+            <TextBlock Text="Авторизация" FontSize="27" HorizontalAlignment="Center" Margin="0 10 0 10" FontFamily="Century Gothic"></TextBlock>
+
+            <TextBlock Text="Логин" HorizontalAlignment="Left" Margin="10 0 0 0" FontFamily="Century Gothic" FontSize="15"></TextBlock>
+            <TextBox Margin="10 0 10 10" FontFamily="Century Gothic" Height="20" FontSize="15" Name="Login"></TextBox>
+            <TextBlock Text="Пароль" HorizontalAlignment="Left" Margin="10 0 0 0" FontFamily="Century Gothic" FontSize="15"></TextBlock>
+            <PasswordBox Margin="10 0 10 30" FontFamily="Century Gothic" Height="20" FontSize="15" Name="Password"></PasswordBox>
+
+            <Button Content="Войти" FontSize="15" FontFamily="Century Gothic" Background="#FFF1F1F1" Margin="10 0 10 10" Height="25" Name="Vxod_Button" Click="Vxod_Button_Click"/>
+            <Button Content="Зарегистрироваться" FontSize="15" FontFamily="Century Gothic" Name="Registration_Button" Click="Registration_Button_Click" Background="#FFF1F1F1" Margin="10 0 10 10" Height="25"></Button>
+            <Button Content="Востановление пароля" FontSize="15" FontFamily="Century Gothic" Name="Recovery_Button" Click="Recovery_Button_Click" Background="#FFF1F1F1" Margin="10 0 10 10" Height="25"></Button>
+            
+        </StackPanel> 
+    </Grid>
+</Window>

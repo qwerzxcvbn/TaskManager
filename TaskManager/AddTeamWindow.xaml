@@ -1,0 +1,25 @@
+﻿<Window x:Class="TaskManager.AddTeamWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TaskManager"
+        mc:Ignorable="d"
+        Title="AddTeamWindow" Height="350" Width="450" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <StackPanel Background="#FFE8EDFF">
+            <TextBlock Text="Новая команда" FontSize="30" HorizontalAlignment="Center" Margin="0 5 0 30" FontFamily="Century Gothic"></TextBlock>
+            <TextBlock Text="Название" FontSize="15" Margin="10 0 10 0" FontFamily="Century Gothic" ></TextBlock>
+            <TextBox FontSize="15" FontFamily="Century Gothic" Margin="10 0 10 10" Name="TeamNameTextBox"></TextBox>
+            <TextBlock Text="Выберите участников" FontSize="15" FontFamily="Century Gothic" Margin="10 0 10 5"/>
+            <ListBox Name="UsersListBox" SelectionMode="Multiple" Height="100" Margin="10 0 10 20">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding FullName}" />
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+            <Button Content="Добавить" FontSize="15" FontFamily="Century Gothic" Background="#FFF1F1F1" Width="250" Height="25" Name="AddTeam" Click="AddTeam_Click" ></Button>
+        </StackPanel>
+    </Grid>
+</Window>
