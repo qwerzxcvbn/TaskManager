@@ -37,9 +37,8 @@
 В дальнейшем, все записи отсюда выгружаются в приложение.
 
 # Скриншоты приложения:
-![Окно авторизации](https://github.com/qwerzxcvbn/TaskManager/blob/main/Image/Main.png)
-**Окно авторизации**
-</br>
+![Окно авторизации](https://github.com/qwerzxcvbn/TaskManager/blob/main/Image/Main.png)</br>
+**Окно авторизации**</br>
 ![Страница добавления]()
 ## Страница добавления
 </br> </br> </br>
