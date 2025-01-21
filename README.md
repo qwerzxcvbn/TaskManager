@@ -46,10 +46,10 @@
 ![Окно востановления пароля](https://github.com/qwerzxcvbn/TaskManager/blob/main/Image/Vostanovlenie1.png)</br>
 **Окно востановления пароля**
 </br></br></br>
-![Главное окно с задачами(User)](https://github.com/qwerzxcvbn/TaskManager/blob/main/Image/TasksWindow1.png)</br>
+![Главное окно с задачами(User)](https://github.com/qwerzxcvbn/TaskManager/blob/main/Image/TasksWindow2.png)</br>
 **Главное окно с задачами(User)**
 </br></br></br>
-![Главное окно с задачами(Admin)](https://github.com/qwerzxcvbn/TaskManager/blob/main/Image/TaskWindowAdmin1.png)</br>
+![Главное окно с задачами(Admin)](https://github.com/qwerzxcvbn/TaskManager/blob/main/Image/TaskWindowAdmin2.png)</br>
 **Главное окно с задачами(Admin)**
 </br></br></br>
 ![Окно создания задачи](https://github.com/qwerzxcvbn/TaskManager/blob/main/Image/AddTask1.png)</br>
