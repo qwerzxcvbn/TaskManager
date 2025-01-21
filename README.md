@@ -37,31 +37,31 @@
 В дальнейшем, все записи отсюда выгружаются в приложение.
 
 # Скриншоты приложения:
-![Окно авторизации](https://github.com/qwerzxcvbn/TaskManager/blob/main/Image/Main.png)</br>
+![Окно авторизации](https://github.com/qwerzxcvbn/TaskManager/blob/main/Image/Main1.png)</br>
 **Окно авторизации**
 </br></br></br>
-![Окно регистрации](https://github.com/qwerzxcvbn/TaskManager/blob/main/Image/Registr.png)</br>
+![Окно регистрации](https://github.com/qwerzxcvbn/TaskManager/blob/main/Image/Registr1.png)</br>
 **Окно регистрации**
 </br></br></br>
-![Окно востановления пароля](https://github.com/qwerzxcvbn/TaskManager/blob/main/Image/Vostanovlenie.png)</br>
+![Окно востановления пароля](https://github.com/qwerzxcvbn/TaskManager/blob/main/Image/Vostanovlenie1.png)</br>
 **Окно востановления пароля**
 </br></br></br>
-![Главное окно с задачами(User)](https://github.com/qwerzxcvbn/TaskManager/blob/main/Image/TasksWindow.png)</br>
+![Главное окно с задачами(User)](https://github.com/qwerzxcvbn/TaskManager/blob/main/Image/TasksWindow1.png)</br>
 **Главное окно с задачами(User)**
 </br></br></br>
-![Главное окно с задачами(Admin)](https://github.com/qwerzxcvbn/TaskManager/blob/main/Image/TaskWindowAdmin.png)</br>
+![Главное окно с задачами(Admin)](https://github.com/qwerzxcvbn/TaskManager/blob/main/Image/TaskWindowAdmin1.png)</br>
 **Главное окно с задачами(Admin)**
 </br></br></br>
-![Окно создания задачи](https://github.com/qwerzxcvbn/TaskManager/blob/main/Image/AddTask.png)</br>
+![Окно создания задачи](https://github.com/qwerzxcvbn/TaskManager/blob/main/Image/AddTask1.png)</br>
 **Окно создания задачи**
 </br></br></br>
-![Окно с проектами](https://github.com/qwerzxcvbn/TaskManager/blob/main/Image/ProjectWindow.png)</br>
+![Окно с проектами](https://github.com/qwerzxcvbn/TaskManager/blob/main/Image/ProjectWindow1.png)</br>
 **Окно с проектами**
 </br></br></br>
-![Окно с командами](https://github.com/qwerzxcvbn/TaskManager/blob/main/Image/TeamWindow.png)</br>
+![Окно с командами](https://github.com/qwerzxcvbn/TaskManager/blob/main/Image/TeamWindow1.png)</br>
 **Окно с командами**
 </br></br></br>
-![Личный кабинет](https://github.com/qwerzxcvbn/TaskManager/blob/main/Image/AccountWindow.png)</br>
+![Личный кабинет](https://github.com/qwerzxcvbn/TaskManager/blob/main/Image/AccountWindow1.png)</br>
 **Личный кабинет**
 </br></br></br>
 ![Окно со списком пользователей(Admin)](https://github.com/qwerzxcvbn/TaskManager/blob/main/Image/ListUserWindow.png)</br>
