@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TaskManager"
         mc:Ignorable="d"
-        Title="AddProjectWindow" Height="300" Width="400" WindowStartupLocation="CenterScreen">
+        Title="Новый проект" Height="300" Width="400" WindowStartupLocation="CenterScreen" Icon="/icon.png">
     <Grid>
         <StackPanel Background="#FFE8EDFF">
             <TextBlock Text="Новый проект" FontSize="30" HorizontalAlignment="Center" Margin="0 5 0 30" FontFamily="Century Gothic"></TextBlock>

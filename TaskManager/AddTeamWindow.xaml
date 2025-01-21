@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TaskManager"
         mc:Ignorable="d"
-        Title="AddTeamWindow" Height="350" Width="450" WindowStartupLocation="CenterScreen">
+        Title="Новая команда" Height="350" Width="450" WindowStartupLocation="CenterScreen" Icon="/icon.png">
     <Grid>
         <StackPanel Background="#FFE8EDFF">
             <TextBlock Text="Новая команда" FontSize="30" HorizontalAlignment="Center" Margin="0 5 0 30" FontFamily="Century Gothic"></TextBlock>

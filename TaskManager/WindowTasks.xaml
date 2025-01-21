@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TaskManager"
         mc:Ignorable="d"
-        Title="WindowTasks" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+        Title="Главное окно" Height="450" Width="800" WindowStartupLocation="CenterScreen" Icon="/icon.png">
     <Grid>
         <StackPanel Background="#FFE8EDFF">
             <TextBlock Text="Задачи" FontSize="33" HorizontalAlignment="Center" Margin="0 10 0 10" FontFamily="Century Gothic"></TextBlock>

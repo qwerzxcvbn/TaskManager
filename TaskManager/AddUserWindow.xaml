@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TaskManager"
         mc:Ignorable="d"
-        Title="AddUserWindow" Height="450" Width="600" WindowStartupLocation="CenterScreen">
+        Title="Новый пользователь" Height="450" Width="600" WindowStartupLocation="CenterScreen" Icon="/icon.png">
     <Grid>
         <StackPanel Background="#FFE8EDFF">
             <TextBlock Text="Добавить пользователя" FontSize="27" HorizontalAlignment="Center" Margin="0 10 0 20" FontFamily="Century Gothic"  ></TextBlock>
