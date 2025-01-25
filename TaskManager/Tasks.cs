@@ -9,9 +9,10 @@
 
 namespace TaskManager
 {
+    using Newtonsoft.Json;
     using System;
     using System.Collections.Generic;
-    
+
     public partial class Tasks
     {
         public int idTask { get; set; }
@@ -22,10 +23,14 @@ namespace TaskManager
         public Nullable<int> idProject { get; set; }
         public Nullable<int> idStatus { get; set; }
         public Nullable<int> idTeam { get; set; }
-    
+
+        [JsonIgnore]
         public virtual Project Project { get; set; }
+        [JsonIgnore]
         public virtual Status Status { get; set; }
+        [JsonIgnore]
         public virtual Teams Teams { get; set; }
+        [JsonIgnore]
         public virtual Users Users { get; set; }
     }
 }

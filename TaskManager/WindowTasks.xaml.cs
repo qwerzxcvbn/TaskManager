@@ -20,6 +20,7 @@ namespace TaskManager
     /// </summary>
     public partial class WindowTasks : Window
     {
+        TaskManagerDBEntities taskManagerDBEntities = new TaskManagerDBEntities();
         private TaskManagerDBEntities _context;
         private Users _currentUser;
         public WindowTasks(Users currentUser)
@@ -94,6 +95,67 @@ namespace TaskManager
             AccountWindow accountWindow = new AccountWindow(_currentUser, _context);
             accountWindow.Show();
             this.Close();
+        }
+        private void TXTButton_Click(object sender, RoutedEventArgs e)
+        {
+            var tasks = DataGridTasks.ItemsSource as IEnumerable<Tasks>;
+            if (tasks == null)
+            {
+                MessageBox.Show("Нет данных для экспорта.", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+
+            var saveFileDialog = new Microsoft.Win32.SaveFileDialog
+            {
+                Filter = "Text files (*.txt)|*.txt",
+                DefaultExt = ".txt",
+                FileName = "tasks_export.txt"
+            };
+
+            if (saveFileDialog.ShowDialog() == true)
+            {
+                using (var writer = new System.IO.StreamWriter(saveFileDialog.FileName))
+                {
+                    foreach (var task in tasks)
+                    {
+                        writer.WriteLine($"Название: {task.NameTask}");
+                        writer.WriteLine($"Описание: {task.Description}");
+                        writer.WriteLine($"Дата: {task.Data}");
+                        writer.WriteLine($"Статус: {task.Status.NameStatus}");
+                        writer.WriteLine($"Проект: {task.Project.NameProject}");
+                        writer.WriteLine($"Исполнитель: {task.Users.FullName}");
+                        writer.WriteLine($"Команда: {task.Teams.NameTeam}");
+                        writer.WriteLine(new string('-', 50));
+                    }
+                }
+
+                MessageBox.Show("Данные успешно экспортированы в TXT.", "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+        }
+
+        private void JSONButton_Click(object sender, RoutedEventArgs e)
+        {
+            var tasks = DataGridTasks.ItemsSource as IEnumerable<Tasks>;
+            if (tasks == null)
+            {
+                MessageBox.Show("Нет данных для экспорта.", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+
+            var saveFileDialog = new Microsoft.Win32.SaveFileDialog
+            {
+                Filter = "JSON files (*.json)|*.json",
+                DefaultExt = ".json",
+                FileName = "tasks_export.json"
+            };
+
+            if (saveFileDialog.ShowDialog() == true)
+            {
+                var json = Newtonsoft.Json.JsonConvert.SerializeObject(tasks, Newtonsoft.Json.Formatting.Indented);
+                System.IO.File.WriteAllText(saveFileDialog.FileName, json);
+
+                MessageBox.Show("Данные успешно экспортированы в JSON.", "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
         }
     }
 }

@@ -16,6 +16,9 @@
                 <Button Height="25" Width="160" Margin="480 -25 0 0" HorizontalAlignment="Left" Background="#FFF1F1F1" Content="Личный кабинет" FontSize="15" FontFamily="Century Gothic" Name="AccountButton" Click="AccountButton_Click"></Button>
                 <Button Height="25" Width="158" Margin="640 -25 0 0" HorizontalAlignment="Left" Background="#FFF1F1F1" Content="Удалить задачу" FontSize="15" FontFamily="Century Gothic" Name="DeleteTask" Click="DeleteTask_Click"></Button>
             </StackPanel>
+            <TextBlock Text="Выберите формат экспорта: " Margin="80 0 0 -25" FontSize="20" HorizontalAlignment="Left" FontFamily="Century Gothic"></TextBlock>
+            <Button Height="25" Width="160" Margin="160 0 0 0" Background="#FFF1F1F1" Content=".TXT" Name="TXTButton" FontSize="15" FontFamily="Century Gothic" Click="TXTButton_Click"></Button>
+            <Button Height="25" Width="160" Margin="520 -25 0 0" Background="#FFF1F1F1" Content=".JSON" Name="JSONButton" FontSize="15" FontFamily="Century Gothic" Click="JSONButton_Click"></Button>
             <DataGrid IsReadOnly="True" AutoGenerateColumns="False" x:Name="DataGridTasks" MouseDoubleClick="DataGridTasks_MouseDoubleClick">
                 <DataGrid.Columns>
                     <DataGridTextColumn Width="100" MaxWidth="100" MinWidth="100" Header="Название" Binding="{Binding Path=NameTask}"></DataGridTextColumn>
